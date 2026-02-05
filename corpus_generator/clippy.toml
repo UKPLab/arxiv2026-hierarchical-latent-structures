@@ -1,0 +1,9 @@
+# Clippy configuration to enforce project standards
+
+# Disallow standard library HashMap and HashSet
+disallowed-types = [
+    { path = "std::collections::HashMap", reason = "Use ahash::HashMap instead for better performance" },
+    { path = "std::collections::HashSet", reason = "Use ahash::HashSet instead for better performance" },
+    { path = "::std::collections::HashMap", reason = "Use ahash::HashMap instead for better performance" },
+    { path = "::std::collections::HashSet", reason = "Use ahash::HashSet instead for better performance" },
+]

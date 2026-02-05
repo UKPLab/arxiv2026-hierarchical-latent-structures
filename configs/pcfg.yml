@@ -1,0 +1,26 @@
+experiment_name: "pcfg_large"
+num_experiments_per_grammar: 1
+param_ranges:
+  vocab_size: [1000]
+  context_window: [512]
+  model_dim: [256]
+  num_layers: [16]
+  num_heads: [4]
+  architecture: ["llama"]
+
+languages:
+  - pcfg:
+      pct_subj: 0.3
+      pct_obj: 0.3
+      pct_verb: 0.3
+      pct_conn: 0.03
+      pct_intersection: 0.07
+      zipf_exponent: 1.0
+      amount_of_docs: 300_000
+      amount_of_doc_repetitions: 10
+      amount_of_sections: 10
+      amount_of_paragraphs_per_section: 20
+
+
+external_experiment_path: "/p/scratch/westai0065/experiments"
+mode: sequential
