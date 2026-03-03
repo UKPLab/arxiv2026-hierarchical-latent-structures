@@ -7,10 +7,6 @@ from typing import Optional
 
 import pendulum
 
-from training_pipeline.utils.aim_gpu_filter import patch_aim_gpu_tracking
-
-patch_aim_gpu_tracking()
-
 from aim.hugging_face import AimCallback
 from datasets import load_from_disk
 from training_pipeline.utils.arrow_loader import load_uint16_as_hf_input_ids

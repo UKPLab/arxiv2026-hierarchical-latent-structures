@@ -10,7 +10,7 @@ Hierarchical Latent Structures in Data Generation Process Unify Mechanistic Phen
 <p align="center">
   <img src="experimental_setup.png" />
 </p>
-
+This repository contains the code and experimental pipelines for the paper “Hierarchical Latent Structures in Data Generation Process Unify Mechanistic Phenomena across Scale”. Specifically, for reproducing Figures 2, 3, 4, 5(a).
 
 [UKP Lab](https://www.ukp.tu-darmstadt.de/) | [TU Darmstadt](https://www.tu-darmstadt.de/
 )
@@ -21,7 +21,7 @@ Hierarchical Latent Structures in Data Generation Process Unify Mechanistic Phen
 This project uses [uv](https://github.com/astral-sh/uv) as the Python package manager. Install dependencies and setup the virtual environment:
 
 ```bash
-uv sync
+uv sync --frozen
 ```
 ## Run N-gram pipeline 
 ```bash
@@ -67,76 +67,3 @@ If you found our data or code helpful, please cite our paper:
 ## Disclaimer
 
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
-
-
-
-## File structure
-```
-├── .gitignore
-├── LICENSE
-├── README.md
-├── analysis
-│   ├── data_loader.py
-│   ├── function_vectors.ipynb
-│   ├── hydra_effect.py
-│   ├── induction_heads.ipynb
-│   ├── plot_helpers.py
-│   ├── plot_hydra_effect.ipynb
-│   ├── structure_analysis.ipynb
-│   └── training_losses.ipynb
-├── configs
-│   ├── ngram.yml
-│   └── pcfg.yml
-├── corpus_generator
-│   ├── Cargo.lock
-│   ├── Cargo.toml
-│   ├── clippy.toml
-│   ├── src
-│   │   ├── arrow_writer.rs
-│   │   ├── config
-│   │   │   ├── mod.rs
-│   │   │   └── ngram.rs
-│   │   ├── language
-│   │   │   ├── mod.rs
-│   │   │   ├── ngram.rs
-│   │   │   └── pcfg.rs
-│   │   ├── lib.rs
-│   │   ├── main.rs
-│   │   └── tokenizer.rs
-│   └── tests
-│       ├── bigram_validation_test.rs
-│       └── test_languages.rs
-├── experimental_setup.png
-├── olmo_evaluation
-│   ├── evaluators
-│   │   ├── hydra_effect.py
-│   │   └── induction_heads.py
-│   ├── multi_gpu_entry.py
-│   └── prerequisites
-│       ├── download_checkpoints.py
-│       ├── download_paloma.py
-│       └── download_wandb_log.py
-├── pyproject.toml
-├── training_pipeline
-│   ├── configs
-│   │   ├── __init__.py
-│   │   ├── experiment_config.py
-│   │   ├── model_config.py
-│   │   └── runner_config.py
-│   ├── entry.py
-│   ├── runner.py
-│   └── utils
-│       ├── __init__.py
-│       ├── aim_gpu_filter.py
-│       ├── arrow_loader.py
-│       ├── checkpoint_manager.py
-│       ├── duration.py
-│       ├── evaluator_factory.py
-│       ├── logger.py
-│       ├── model_factory.py
-│       ├── model_utils.py
-│       ├── trainer_factory.py
-│       └── training_loss_logger.py
-└── uv.lock
-```
-
