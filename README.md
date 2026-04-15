@@ -1,4 +1,4 @@
-[![Arxiv](https://img.shields.io/badge/Arxiv-YYMM.NNNNN-red?style=flat-square&logo=arxiv&logoColor=white)](https://put-here-your-paper.com)
+[![Arxiv](https://img.shields.io/badge/Arxiv-2603.06592-red?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.06592)
 [![License](https://img.shields.io/github/license/UKPLab/arxiv2026-hierarchical-latent-structures)](https://github.com/UKPLab/arxiv2026-hierarchical-latent-structures/blob/main/LICENSE)
 [![Python Versions](https://img.shields.io/badge/Python-3.12-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
