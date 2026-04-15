@@ -51,16 +51,11 @@ uv run olmo_evaluation/multi_gpu_entry.py
 If you found our data or code helpful, please cite our paper:
 
 ```
-@InProceedings{smith:20xx:CONFERENCE_TITLE,
-  author    = {Smith, John},
-  title     = {My Paper Title},
-  booktitle = {Proceedings of the 20XX Conference on XXXX},
-  month     = mmm,
-  year      = {20xx},
-  address   = {Gotham City, USA},
-  publisher = {Association for XXX},
-  pages     = {XXXX--XXXX},
-  url       = {http://xxxx.xxx}
+@article{rohweder2026hierarchical,
+  title={Hierarchical Latent Structures in Data Generation Process Unify Mechanistic Phenomena across Scale},
+  author={Rohweder, Jonas and Dutta, Subhabrata and Gurevych, Iryna},
+  journal={arXiv preprint arXiv:2603.06592},
+  year={2026}
 }
 ```
 
