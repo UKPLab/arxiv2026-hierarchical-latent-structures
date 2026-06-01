@@ -31,6 +31,17 @@ uv run experiment --config-path=configs/ngram.yml
 ```bash
 uv run experiment --config-path=configs/pcfg.yml
 ```
+
+## Run toy hierarchy experiments
+The controlled toy experiments from Section 3 are in `toy_model_hierarchy`.
+They train matched hierarchical and flat DGP models and measure Hydra, induction,
+function-vector, and assumption-probe metrics.
+
+```bash
+uv run python toy_model_hierarchy/experiment.py
+uv run python toy_model_hierarchy/significance_test.py
+```
+
 ## Run OLMo-1b evaluation
 
 To reproduce all OLMo evaluation results run:
